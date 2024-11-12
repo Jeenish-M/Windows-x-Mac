@@ -1,0 +1,203 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url(Images/img0.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.navbar {
+  height: 25px;
+  width: 100%;
+  margin: 0;
+  padding: 0 0.4em 0 0.4em;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu, .navbar .dt-time-control {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.dt-time-control a{
+  margin-right: 1.5em; 
+}
+
+.navbar .menu {
+  justify-content: left;
+}
+
+.navbar .dt-time-control {
+  justify-content: right;
+}
+
+.win-logo, .cc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.win-logo {
+  margin: 0 1.5em 0 1.5em;
+}
+
+.cc-icon {
+  margin-right: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: default;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5em;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  margin: 0 1em 1em 1em;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.start-menu {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.start-menu:hover {
+  background: #313131;
+}
+
+.start-menu img {
+  width: 80%;
+  height: 80%;
+}
+
+.dock {
+  display: flex;
+  gap: 10px;
+  margin: 0.3em;
+  padding: 0.3em 1em 0.3em 1em;
+  background: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 2px black;
+}
+
+.task-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.task-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.windows img {
+  width: 60px;
+  height: 60px;
+}
+
+.search img, .setting img {
+  width: 45px;
+  height: 45px;
+}
+
+.mul-desk img {
+  width: 35px;
+  height: 35px;
+}
+
+.edge img {
+  width: 40px;
+  height: 40px;
+}
+
+.file-exp img {
+  width: 50px;
+  height: 50px;
+}
+
+.copilot img {
+  width: 45px;
+  height: 45px;
+}
+
+.system-tray {
+  width: 120px;
+  height: 40px;
+  background-color: #ffffff;
+
+}
+
+.desktop-icons {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 20px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}
+
+.icon img {
+  width: 60px;
+  /* Adjust icon size as needed */
+  height: 60px;
+  /* Adjust icon size as needed */
+  margin-bottom: 10px;
+}
+
+.icon span {
+  font-size: 14px;
+}
